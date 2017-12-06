@@ -19,7 +19,6 @@ response = supercode.call(
     credentials_json_data,
     spreadsheet_id,
     range_name,
-    data,
     major_dimension, # not required default value is `ROWS`
     value_input_option # not required default value is `RAW`
 )
@@ -44,8 +43,6 @@ example:
       "auth_provider_x509_cert_url": "",
       "client_x509_cert_url": ""
     }'
-    
-    data="[['test1', 'test2']]"
     
     python test.py --credentials_json_data=$json_data --spreadsheet_id="<your spreadsheet id>" --range_name="Sheet1\!A1:B1"
 

@@ -9,12 +9,11 @@ SCOPES = 'https://www.googleapis.com/auth/spreadsheets'
 
 
 class GoogleSpreadsheet:
-    def __init__(self, credentials_json_data, spreadsheet_id, range_name, data=None, major_dimension="ROWS",
+    def __init__(self, credentials_json_data, spreadsheet_id, range_name, major_dimension="ROWS",
                  value_input_option="RAW"):
         self.credentials_json_data = credentials_json_data
         self.spreadsheet_id = spreadsheet_id
         self.range_name = range_name
-        self.data = data
         self.major_dimension = major_dimension
         self.value_input_option = value_input_option
 
@@ -68,7 +67,6 @@ def main(credentials_json_data=None, spreadsheet_id="", range_name="", data=None
         credentials_json_data=credentials_json_data,
         spreadsheet_id=spreadsheet_id,
         range_name=range_name,
-        data=data,
         major_dimension=major_dimension,
         value_input_option=value_input_option
     )
