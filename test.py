@@ -61,7 +61,7 @@ class GoogleSpreadsheet:
         return response
 
 
-def main(credentials_json_data=None, spreadsheet_id="", range_name="", data=None,
+def main(credentials_json_data=None, spreadsheet_id="", range_name="",
          major_dimension="ROWS", value_input_option="RAW"):
     google_spreadsheet = GoogleSpreadsheet(
         credentials_json_data=credentials_json_data,
