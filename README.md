@@ -1,6 +1,6 @@
-# Google Spreadhsheet Api
+# Google Spreadhsheet Api - Get
 
-A [Supercode](http://gosupercode.com) function that controls google spreadsheet.
+A [Supercode](http://gosupercode.com) function that get google spreadsheet data.
 Still developing for other methods of google spreadsheet api.
 
 ## Server Usage
